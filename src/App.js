@@ -9,7 +9,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 firebase.initializeApp({
-	apiKey: "AIzaSyANs_tXUEqMa-WJQiMOFidjg4Ex5eYZ7Nw",
+	apiKey: process.env.REACT_APP_FIREBASE_API_KEY, // Committing api key to deploy with github pages
 	authDomain: "fir-play-2ffe3.firebaseapp.com",
 	projectId: "fir-play-2ffe3",
 	storageBucket: "fir-play-2ffe3.appspot.com",
